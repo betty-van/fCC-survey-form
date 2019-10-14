@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FCC Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title">Dinner Survey Form</h1>
+    <p id="description">Let me know  what kind of food you want to eat for dinner</p>
+
+    <form id="survey-form" class="container">
+    <div class="inputwrapper">
+        <label for="name" id="name-label">Name:</label><input type="text" name="name" id="name" placeholder="Enter your name" required>
+    </div>
+    <div class="inputwrapper">
+        <label for="email" id="email-label">Email:</label> <input type="email" name="email" id="email" placeholder="Enter your email" required>
+    </div>
+    <div class="inputwrapper">
+        <label for="guests" id="number-label">Number of Guests:</label><input type="number" name="guests" id="number" min="1" max="10" placeholder="age">
+    </div>
+    <div class="inputwrapper">
+        <p>
+            What option describes your eating stlye? 
+        </p>
+        <select name="eating-style" id="dropdown">
+            <option value="none-selected" selected>Pick an eating style</option>
+            <option value="vegan">Vegan</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="pescatarian">Pescatarian</option>
+            <option value="keto">Keto</option>
+            <option value="no-special-requirements">No special requirements</option>
+        </select>
+    </div>
+    <div class="inputwrapper">
+        <p>
+            Have you eaten here before?
+        </p>
+        <input type="radio" name="eaten-before" value="yes" checked>Yes
+        <input type="radio" name="eaten-before" value="no">No
+    </div>
+    <div class="inputwrapper">
+        <p>
+            Which of the following meals would you like to order?
+        </p>
+        <input type="checkbox" name="eggs-bacon" value="eggs-bacon">Eggs & Bacon
+        <input type="checkbox" name="breakfast-sandwich" value="breakfast-sandwich">Breakfast Sandwich
+    </div>
+    <div class="inputwrapper">
+        <p>Is there anything else you would like to add?</p>
+        <textarea rows="4" cols="50">
+            Nope! You did great!
+        </textarea>
+    </div>
+    <div class="mybutton">
+        <input type="submit" value="submit" id="submit">
+    </div>
+    </form>
+</body>
+</html>

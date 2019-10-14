@@ -1,0 +1,22 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-color: rgb(165, 229, 231);
+}
+
+form {
+    background-color: azure;
+    padding: 20px;
+}
+
+.container {
+    width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+}
+
+.inputwrapper {
+    padding-top: 10px;
+}
+
